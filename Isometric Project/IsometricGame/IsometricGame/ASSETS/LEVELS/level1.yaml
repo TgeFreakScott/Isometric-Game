@@ -1,0 +1,99 @@
+player:
+   position: {x: 220, y: 340}
+   rotation: 90
+missile:
+   - position: {x: 425, y: 490}
+   - position: {x: 1455, y: 585}
+launcher:
+   position: {x: 1320, y: 900}
+   rotation: 0
+   reload_time: 0
+flare:
+   speed: 1000
+   temperature: 100
+platforms: 
+   - type: launch
+     position: {x: 220, y: 340}
+     rotation: 0
+   - type: land
+     position: {x: 1600, y: 590}
+     rotation: 0
+obstacles: 
+   - type: rock
+     position: {x: 680, y: 540}
+     rotation: 0
+     alive: true
+terrain: 
+   - position: {x: 0, y: 300}#1
+   - position: {x: 50, y: 280}
+   - position: {x: 100, y: 280}#2
+   - position: {x: 100, y: 335}
+   - position: {x: 150, y: 340}#3
+   - position: {x: 300, y: 340}
+   - position: {x: 310, y: 400}#4
+   - position: {x: 310, y: 450}
+   - position: {x: 350, y: 450}#5
+   - position: {x: 350, y: 500}
+   - position: {x: 420, y: 510}#6
+   - position: {x: 500, y: 500}
+   - position: {x: 530, y: 540}#7
+   - position: {x: 642, y: 555}
+   - position: {x: 680, y: 600}#8
+   - position: {x: 680, y: 610}
+   - position: {x: 700, y: 610}#9
+   - position: {x: 718, y: 650}
+   - position: {x: 750, y: 743}#10
+   - position: {x: 750, y: 795}
+   - position: {x: 768, y: 825}#11
+   - position: {x: 768, y: 900}
+   - position: {x: 835, y: 950}#12
+   - position: {x: 835, y: 1010}
+   - position: {x: 915, y: 1010}#13
+   - position: {x: 915, y: 1020}
+   - position: {x: 970, y: 1020}#14
+   - position: {x: 1010, y: 1040}
+   - position: {x: 1035, y: 1020}#15
+   - position: {x: 1100, y: 1005}
+   - position: {x: 1160, y: 1005}#16
+   - position: {x: 1280, y: 1000}
+   - position: {x: 1280, y: 985}#17
+   - position: {x: 1360, y: 985} 
+   - position: {x: 1360, y: 940}#18
+   - position: {x: 1400, y: 940}
+   - position: {x: 1400, y: 900}#19
+   - position: {x: 1430, y: 900}
+   - position: {x: 1430, y: 730}#20
+   - position: {x: 1440, y: 650}
+   - position: {x: 1470, y: 610}#21
+   - position: {x: 1500, y: 550}
+   - position: {x: 1550, y: 590}#22
+   - position: {x: 1600, y: 610}
+   - position: {x: 1650, y: 590}#23
+   - position: {x: 1750, y: 590}
+   - position: {x: 1750, y: 500}#24
+   - position: {x: 1800, y: 430}
+   - position: {x: 1880, y: 380}#25
+   - position: {x: 1920, y: 340}
+   - position: {x: 1920, y: 1080}
+   - position: {x: 708, y: 450}#26
+   - position: {x: 720, y: 490}
+   - position: {x: 750, y: 510}#27
+   - position: {x: 805, y: 510}
+   - position: {x: 805, y: 590}#28
+   - position: {x: 860, y: 740}
+   - position: {x: 885, y: 785}#29
+   - position: {x: 900, y: 820}
+   - position: {x: 905, y: 830}#30
+   - position: {x: 905, y: 850}
+   - position: {x: 950, y: 895}#31
+   - position: {x: 990, y: 875}
+   - position: {x: 1030, y: 895}#32
+   - position: {x: 1070, y: 910}
+   - position: {x: 1155, y: 890}#33
+   - position: {x: 1190, y: 905}
+   - position: {x: 1260, y: 865}#
+   - position: {x: 720, y: 0}#big block p1
+   - position: {x: 710, y: 450}#p2
+   - position: {x: 1260, y: 865}#p3
+   - position: {x: 1270, y: 840}#p4
+   - position: {x: 1265, y: 0}#p5

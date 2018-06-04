@@ -1,0 +1,5 @@
+﻿  Game.cpp
+c:\users\scott\desktop\isometric project\isometricgame\isometricgame\game.cpp(25): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\scott\desktop\isometric project\isometricgame\isometricgame\game.cpp(29): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+c:\users\scott\desktop\isometric project\isometricgame\isometricgame\game.cpp(80): warning C4101: 'event': unreferenced local variable
+  IsometricGame.vcxproj -> C:\Users\Scott\Desktop\Isometric Project\IsometricGame\Debug\IsometricGame.exe

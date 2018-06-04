@@ -1,0 +1,50 @@
+#ifdef GL_ES
+precision mediump float;
+#endif
+uniform float time;
+
+uniform vec2 resolution;
+#define PI 3.14159265
+
+float segment(vec2 position, vec2 start_p, vec2 end_p)
+{
+    vec2 AP = position - start_p;
+    vec2 AB = end_p - start_p;
+    float h = clamp(dot(AP, AB) / dot(AB, AB), 0.0, 1.0);
+    float seg = length(AP - AB * h);
+    return seg;
+}
+
+vec2 rotate(vec2 v, float a,vec2 o) {
+    float s = sin(a);
+    float c = cos(a);
+    mat2 m = mat2(c, -s, s, c);
+    return m * (v-o);
+}
+
+void main( void ) {
+    vec2 position = (( gl_FragCoord.xy / resolution.xy ) - vec2(0.5,0.5)) * 9.0;
+    position.x = position.x*(resolution.x / resolution.y) - 0.5;
+    vec4 color = vec4(30.0);
+    vec2 A = vec2(0.0, 0.0);
+    vec2 B = vec2(0.5, 0.5);
+    
+    vec2 o = A+B/2.;
+    vec4 color_1 = vec4(0.0); 
+    for (int i=0;i <1;++i)
+    {
+        
+        A = rotate(A,PI/9.+time*5.0,o);
+        //B = rotate(B,PI/0.+time,o);
+        float line_1 = segment(position, A, B);
+
+        color_1 += color *0.1 / line_1;
+        
+    
+    }
+    
+    
+    gl_FragColor = color_1;
+    
+    gl_FragColor = clamp(gl_FragColor, 0.0, 1.0);
+}
